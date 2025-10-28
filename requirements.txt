@@ -1,0 +1,15 @@
+# Core Database Connector (to connect Python with MariaDB)
+mysql-connector-python>=8.0.33
+
+# Data manipulation and analysis
+pandas>=2.0.0
+numpy>=1.25.0
+
+# Data visualization (used in 06_generate_report.py and _runvalidation_report.py)
+matplotlib>=3.7.0
+
+# GUI support (Tkinter comes with Python but Pillow helps with image handling)
+pillow>=10.0.0
+
+# Optional: for testing, logging, and structured outputs (safe to include)
+pytest>=7.0.0
