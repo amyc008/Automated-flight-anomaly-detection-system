@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Local data and outputs
+/data/
+outputs/
+*.sqlite3
+
+# Local config (credentials)
+config.py
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
