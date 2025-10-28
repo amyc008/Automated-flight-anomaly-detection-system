@@ -111,13 +111,14 @@ v
 
 ---
 
-## 🧪 How to Run
+## 🧪 How to Run(For a step by step execution please refer to HOW_TO_RUN.md)
 
 ### 1️⃣ Prerequisites
 
 - Python 3.9 or later
 - MariaDB (v10.5 or newer)
 - Datasets from [OpenFlights.org](https://openflights.org/data.html)
+- VScode
 
 ### 2️⃣ Installation
 

@@ -22,7 +22,7 @@ It:
 
 Before running anything, install:
 
-- **Python 3.9+**
+- **Python 3.9+,VScode**
 - **MariaDB Server 10.5+**
 - **OpenFlights dataset** (`airports.dat`, `airlines.dat`, `routes.dat`)
 
