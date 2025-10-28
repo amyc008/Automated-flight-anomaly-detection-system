@@ -1,39 +1,4 @@
-"""
-config.py.template
 
-Template for database and project paths configuration.
-
-➡️  Instructions:
-1. Copy this file to config.py
-2. Fill in your actual MariaDB credentials in the DB_CONFIG section
-3. DO NOT commit config.py to version control (it's listed in .gitignore)
-"""
-
-import os
-
-# --- Base directory of your project ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# --- MariaDB connection details ---
-DB_CONFIG = {
-    "host": "127.0.0.1",       # your MariaDB host (usually localhost)
-    "user": "your_username",   # your MariaDB username
-    "password": "your_password",  # your MariaDB password
-    "database": "openflights",    # target database name
-    "port": 3306,                 # MariaDB port (default: 3306)
-    # "auth_plugin": "mysql_native_password",  # uncomment if needed
-}
-
-# --- Project folder paths (config-driven) ---
-PATHS = {
-    "base": BASE_DIR,
-    "raw_csv": os.path.join(BASE_DIR, "openflights", "data"),   # input .dat/.csv files
-    "outputs": os.path.join(BASE_DIR, "outputs"),               # all generated CSVs/charts/reports
-}
-
-# Ensure outputs folder exists
-os.makedirs(PATHS["outputs"], exist_ok=True)
-"""
 config.py.template
 
 Template for database and project paths configuration.
