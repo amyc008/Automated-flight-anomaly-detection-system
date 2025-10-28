@@ -15,6 +15,10 @@ This project checks that data for **mistakes and anomalies** — such as:
 
 It uses **MariaDB’s analytical SQL capabilities (Window Functions)** to find these outliers efficiently — a powerful feature usually used in enterprise-grade analytics.
 
+## Important note about MariaDB ColumnStore / Vector
+
+During the project planning we evaluated MariaDB ColumnStore and Vector for faster analytical queries and similarity searches. Due to environment/connection issues during development (in this submission), the project uses **InnoDB** for all tables and analytics. The core detection logic and query design were developed with ColumnStore / Vector use-cases in mind, so migrating to ColumnStore or Vector in the future should require only schema and connection changes (no major algorithm rework).The core idea remains the same.
+
 ---
 
 ## 🧠 Why this project is special
